@@ -1,0 +1,26 @@
+main div{
+    box-sizing: content-box;
+    padding: 20px;
+    border: 10px solid var(--gris-claro);
+}
+
+.ultimavisita{
+    font-size: var(--titulares)
+}
+
+.ofertas{
+    font-size: var(--titulares)
+}
+
+main article p{
+    font-size: var(--precios);
+}
+
+main article span{
+    font-size: var(--descuentos-descripciones);
+}
+
+main article h4{
+    font-size: var(--descuentos-descripciones);
+    margin-top: 5px;
+}

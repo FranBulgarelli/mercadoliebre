@@ -1,0 +1,33 @@
+footer{
+    box-sizing: border-box;
+    padding: 20px;
+    border: 5px solid;
+    border-color: var(--gris-claro);
+}
+
+footer section{
+    margin-top: 25px;
+}
+
+footer section h3{
+    text-align: center;
+    font-size: var(--cuerpo);
+}
+
+footer section p{
+    text-align: center;
+    font-size: var(--cuerpo);
+}
+
+footer div{
+    text-align: center;
+    color: var(--celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer section span{
+    text-align: right;
+    font-size: var(--cuerpo);
+    margin-bottom: 10px;
+}

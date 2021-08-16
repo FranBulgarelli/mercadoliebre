@@ -1,0 +1,56 @@
+header{
+    background-color: var(--amarillo);
+    font-size: var(--cuerpo);
+}
+
+header img{
+    width: 40%;
+    margin: 20px 0px 10px 20px
+}
+
+header p{
+    font-size: 16px;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: var(--cuerpo);
+}
+
+.buscador{
+    margin-left: 10px;
+}
+
+.lupa{
+    background-color: var(--gris-claro);
+    color: black;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+.burger{
+    background-color: var(--celeste);
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40px;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+header .barra-de-navegacion{
+    margin-bottom: 10px;
+}
