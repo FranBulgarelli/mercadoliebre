@@ -19,3 +19,8 @@
     padding: 0px;
     margin: 0px;
 }
+
+body{
+    width: 100%;
+    background-color: var(--gris-claro);
+}
