@@ -3,24 +3,11 @@ header{
     font-size: var(--cuerpo);
 }
 
-header img{
-    width: 40%;
-    margin: 20px 0px 10px 20px
-}
-
 header p{
     font-size: 16px;
     margin: 10px 0px;
     text-align: center;
     font-size: var(--cuerpo);
-}
-
-.buscador{
-    margin-left: 10px;
-}
-
-.lupa{
-    color: black;
 }
 
 div.burger-menu{
@@ -48,32 +35,128 @@ header nav ul li a{
 
 }
 
-header .barra-de-navegacion{
-    margin-bottom: 10px;
+header .box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+header img{
+    width: 50%;
+    padding: 10px;
+}
+header div .buscar{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.buscador{
+    width: 100%;
+    border: none;
+    padding: 5px;
+}
+.lupa{
+    color: var(--gris-oscuro);
+    background-color: white;
+    border: none;
+    padding: 5px;
+    margin-left: 3px;
 }
 
 @media (min-width: 361px) {
     header div .buscar{
         display: inline;
     }
-    header nav ul{
-        display: inline;
-    }
     header nav{
-        margin-left: 10px;
-        padding-top: 10px;
+        padding-top: 20px;
         padding-bottom: 20px;
     }
     header .burger-menu{
         display: none;
     }
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    header img{
+        width: 35%;
+        padding: 20px;
+    }
+    header div .buscar{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+    header p{
+        width: 35%;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    nav ul.navegacion{
+        display: flex;
+        width: 50%;
+        text-align: center;
+        justify-content: space-around;
+    }
+    nav ul.user {
+        display: flex;
+        width: 50%;
+        text-align: center;
+        justify-content: space-around;
+    }
 }
+
 @media (min-width: 769px) {
-    
+    nav ul.navegacion{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        width: 40%;
+    }
+    nav ul.user {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        width: 40%;
+    }
+    nav{
+        justify-content: space-between;
+    }
 }
 
 @media (max-width: 360px){
+    header div .buscador{
+        border-radius: 5px;
+    }
     header nav ul{
         display: none;
+    }
+    header p{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .lupa{
+        display: flex;
+        position: absolute;
+        color: var(--gris-oscuro);
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 1px;
+        right: 10px;
+        margin-top: 2px;
     }
 }

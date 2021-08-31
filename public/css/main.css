@@ -3,6 +3,11 @@ main{
     display: contents;
 }
 
+main section{
+    width: 90%;
+    margin: 0 auto;
+}
+
 main h2{
     margin-left: 10px;
     margin-top: 10px;
@@ -25,11 +30,13 @@ main article{
 
 article .precio{
     font-size: var(--precios);
+    width: 30%;
 }
 
 article .descuento{
     font-size: var(--descuentos-descripciones);
     color: var(--verde);
+    width: 70%
 }
 
 main article h4{
@@ -37,34 +44,67 @@ main article h4{
     margin-top: 15px;
 }
 
-main i{
-    font-size: 15px;
-    padding: 5px;
-    width: 25px;
-    height: 25px;
+main section .descripcion i{
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    font-size: 10px;
     color: var(--verde);
+    background-color: white;
     border: 1px solid var(--verde);
-    border-radius: 50px;
+    border-radius: 50%;
+    display: block;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    display: block;
 }
 
+
 @media (min-width: 361px) {
+    main h2{
+        width: 100%;
+    }
+    main .descripcion{
+        flex-wrap: wrap;
+    }
+    main article .precio{
+        text-align: center;
+    }
+    main article .descuento{
+        text-align: center;
+    }
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     main section article {
         box-shadow: 0 0 10px rgb(100, 100, 100);
-        margin: 10px
+        margin-bottom: 10px;
+        width: 46%;
     }
     main article div{
         border-top: 1px solid var(--gris-claro);
         background-color: white;
         padding: 15px;
+        display: flex;
+        align-items: center;
+        position: relative;
     }
     main section article h4{
+        display: block;
+        width: 100%;
         color: var(--gris-oscuro);
+    }
+    .banner{
+        display: block;
     }
 }
 
 @media (min-width: 769px) {
-    main section article {
-        box-shadow: 0 0 10px rgb(100, 100, 100);
+    main section article{
+        width: 22%; 
     }
 }
 
@@ -73,11 +113,20 @@ main i{
         margin: 10px;
     }
     main section article h4{
-        display: none;
+        color: var(--gris-oscuro);
+    }
+    main .descripcion{
+        flex-wrap: wrap;
     }
     main article div{
         border-top: 1px solid var(--gris-claro);
         background-color: white;
         padding: 15px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .banner{
+        display: none;
     }
 }
