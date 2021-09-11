@@ -1,0 +1,108 @@
+main.register{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.register section{
+    width: 100%;
+    
+}
+.register article{
+    width: 100%;
+    background-color: var(--gris-claro);
+    box-shadow: none;
+    margin: 0px auto;
+}
+.register form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0px auto;
+}
+
+article.usuario{
+    display: flex;
+    flex-direction: column;
+}
+.register input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.register label.fecha{
+    font-size: var(--titulares);
+    font-weight: bold;
+}
+
+.register article.perfil h3{
+    font-size: var(--titulares);
+}
+.register article.perfil input{
+    margin: 20px 20px;
+}
+
+.register article.categorias h3{
+    font-size: var(--titulares);
+}
+.register article.categorias div{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--gris-claro);
+    align-items: center;
+    padding: 5px;
+    border: none
+}
+.register article.categorias div input{
+    margin: 20px
+}
+
+article.foto{
+    display: flex;
+    flex-direction: column;
+}
+.register article.foto label{
+    font-size: var(--titulares);
+    font-weight: bold;
+}
+.register article.foto input#photo{
+    width: 100%;
+}
+
+.register article.enviar{
+    display: flex;
+    flex-direction: column;
+}
+.register article.enviar input{
+    background-color: var(--celeste);
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+@media (min-width: 361px){
+    
+}
+
+@media (min-width: 769px){
+    .register section{
+    width: 100%;
+    }
+    
+    .register article {
+    width: 90%;
+    box-shadow: none;
+    margin: 0px auto;
+    }
+    
+    .register form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0px auto;
+    }
+}

@@ -1,0 +1,68 @@
+main.login{
+    width: 100%;
+    margin: 0px auto;
+}
+
+.login section{
+    width: 85%;
+}
+
+.login article{
+    width: 100%;
+    background-color: var(--gris-claro);
+    box-shadow: none;
+    margin: 10px 0px;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login input.nombre{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.login input.contraseña{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.login input.enviar{
+    background-color: var(--celeste);
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+@media (min-width: 361px){
+    
+}
+
+@media (min-width: 769px){
+    .login section{
+    width: 80%;
+    }
+    
+    .login article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .login form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    }
+}
