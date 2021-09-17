@@ -21,7 +21,21 @@ footer section p{
     font-size: var(--cuerpo);
 }
 
-footer div{
+footer div.card{
+    text-align: center;
+    color: var(--celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer div.gift{
+    text-align: center;
+    color: var(--celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer div.shield{
     text-align: center;
     color: var(--celeste);
     font-size: 2em;
@@ -39,5 +53,10 @@ footer section span{
 }
 
 @media(min-width:769px){
-    
+    footer div.info{
+        display: flex;
+    }
+    footer div.info section{
+        margin: 20px 30px;
+    }
 }

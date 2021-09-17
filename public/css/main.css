@@ -29,13 +29,13 @@ main article{
 
 article .precio{
     font-size: var(--precios);
-    width: 30%;
+    width: 30%
 }
 
 article .descuento{
     font-size: var(--descuentos-descripciones);
     color: var(--verde);
-    width: 70%
+    width: 70%;
 }
 
 main article h4{
@@ -47,7 +47,7 @@ main section .descripcion i{
     position: absolute;
     right: 20px;
     top: -15px;
-    font-size: 10px;
+    font-size: 16px;
     color: var(--verde);
     background-color: white;
     border: 1px solid var(--verde);
